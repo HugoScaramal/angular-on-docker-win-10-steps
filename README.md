@@ -75,12 +75,12 @@ Open [http://localhost:4200](http://localhost:4200) to check the Angular app.
 <br/><br/>   
 ## Additional information
 
-#### Rebuild on change
+#### Rebuild on change doesn't work and workaround
 Its worth note that Docker for Windows doesn't support change notifications on the mounted volume.  
-That means that when you change a file on your project, it will not automatically rebuild.
+That means that when you change a file on your project, it will not automatically rebuild.  
 More information can be found on:
 * [Github issue](https://github.com/docker/for-win/issues/56)
-* [Docker Logs and troubleshooting - INOTIFY ON SHARED DRIVES DOES NOT WORK](https://docs.docker.com/docker-for-windows/troubleshoot/#/inotify-on-shared-drives-does-not-work)
+* [Docker Logs and troubleshooting - INOTIFY ON SHARED DRIVES DOES NOT WORK](https://docs.docker.com/docker-for-windows/troubleshoot/#/inotify-on-shared-drives-does-not-work)  
 As a workaround, you can install a script called [docker-volume-watcher](https://github.com/merofeev/docker-windows-volume-watcher) to solve that problem.
 
 #### File examples
